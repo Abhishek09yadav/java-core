@@ -7,6 +7,7 @@ public class D01P01 {
 
         // Constructor
         public Book(String title, double price) {
+
             this.title = title;
             this.price = price;
         }
