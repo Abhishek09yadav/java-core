@@ -49,5 +49,5 @@ public class D01P01 {
 
         Book book = createBook(title, price);
         showBook(book);
-}
+    }
 }

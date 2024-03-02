@@ -25,11 +25,7 @@ class Ointment implements Medicinelnfo {
     }
 }
 
-class D01p02 {
-
-}
-
-class TestClass {
+class DO1P02 {
     public static void main(String[] args) {
         Tablet tablet = new Tablet();
         Syrup syrup = new Syrup();
