@@ -14,14 +14,14 @@ class Tablet implements Medicinelnfo {
 class Syrup implements Medicinelnfo {
     @Override
     public void displayLabel() {
-        System.out.println("com.learning.core.day1.Syrup is consumable only on prescription.");
+        System.out.println("Syrup is consumable only on prescription.");
     }
 }
 
 class Ointment implements Medicinelnfo {
     @Override
     public void displayLabel() {
-        System.out.println("com.learning.core.day1.Ointment is for external use only.");
+        System.out.println("Ointment is for external use only.");
     }
 }
 
