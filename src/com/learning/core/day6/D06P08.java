@@ -3,11 +3,11 @@ package com.learning.core.day6;
 import java.util.TreeMap;
 import java.util.Map;
 
-class Car implements Comparable<Car5> {
+class Car8 implements Comparable<Car5> {
     private String name;
     private double price;
 
-    public Car(String name, double price) {
+    public Car8(String name, double price) {
         this.name = name;
         this.price = price;
     }

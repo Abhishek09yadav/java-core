@@ -1,11 +1,11 @@
 package com.learning.core.day6;
 import java.util.TreeMap;
 
-class Car9 implements Comparable<Car9> {
+class Car implements Comparable<Car> {
     private String name;
     private double price;
 
-    public Car9(String name, double price) {
+    public Car(String name, double price) {
         this.name = name;
         this.price = price;
     }
@@ -32,35 +32,35 @@ class Car9 implements Comparable<Car9> {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
-        Car9 car = (Car9) obj;
+        Car car = (Car) obj;
         return Double.compare(car.price, price) == 0;
     }
 
     @Override
-    public int compareTo(Car9 other) {
+    public int compareTo(Car other) {
         return Double.compare(this.price, other.price);
     }
 }
 
 public class D06P09 {
     public static void main(String[] args) {
-        TreeMap<Car9, String> carMap = new TreeMap<>();
+        TreeMap<Car, String> carMap = new TreeMap<>();
 
-        Car9 car1 = new Car9("Bugatti", 80050.0);
-        Car9 car2 = new Car9("Swift", 305000.0);
-        Car9 car3 = new Car9("Audi", 600100.0);
-        Car9 car4 = new Car9("Tesla", 75000.0);
+        Car car1 = new Car("Bugatti", 80050.0);
+        Car car2 = new Car("Swift", 305000.0);
+        Car car3 = new Car("Audi", 600100.0);
+        Car car4 = new Car("Tesla", 75000.0);
 
         carMap.put(car1, car1.getName());
         carMap.put(car2, car2.getName());
         carMap.put(car3, car3.getName());
         carMap.put(car4, car4.getName());
 
-        Car9 keyToReplace = new Car9("Placeholder", 80050.0); // Key with target price
+        Car keyToReplace = new Car("Placeholder", 80050.0); // Key with target price
         carMap.put(keyToReplace, "Reva"); // Replace value for car with price 80050.0
 
         System.out.println("Cars after replacing value:");
-        for (Car9 car : carMap.keySet()) {
+        for (Car car : carMap.keySet()) {
             System.out.println(carMap.get(car) + " " + car.getPrice());
         }
     }
